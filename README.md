@@ -11,7 +11,7 @@ __Static Analysis__: Static code analysis is based on the analysis of the source
 ### Table of Contents    
 [Step 1: Install Docker](#step-1) 
 
-[Step 2: Clang Docker Image](#step-2) 
+[Step 2: Build clang Docker Image](#step-2) 
 
 
 ### Step 1
@@ -20,7 +20,7 @@ First install docker to proceed [https://docs.docker.com/engine/installation/](h
 [Top](#table-of-contents)
 
 ### Step 2
-Follow the steps below to install Clang docker Image from Dockerfile.
+Follow the steps below to build Clang docker Image from Dockerfile.
 
 ```bash
 # Create directory for project
@@ -33,3 +33,8 @@ Follow the steps below to install Clang docker Image from Dockerfile.
 # build Clang image from docker file 
   docker build -f /path/to/a/Dockerfile .
   e.g docker build -f /docker-clang/Dockerfile .
+  
+ # Identify image ID, name and container ID
+   docker images
+   
+   

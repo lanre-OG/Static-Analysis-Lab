@@ -33,8 +33,9 @@ Follow the steps below to build Clang docker Image from Dockerfile.
 # build Clang image from docker file 
   docker build -f /path/to/a/Dockerfile .
   e.g docker build -f /docker-clang/Dockerfile .
+  ``` 
+  <img width="699" alt="docker-build" src="https://cloud.githubusercontent.com/assets/18354718/24938951/e1e0739a-1eff-11e7-9a37-c1e69ea84a27.png"> 
   
+```bash
  # Identify image ID, name and container ID
    docker images
-   
-   

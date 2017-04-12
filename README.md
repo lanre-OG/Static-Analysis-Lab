@@ -16,6 +16,7 @@ __Clang Analyzer__: [Clang](https://clang-analyzer.llvm.org/) is an open-source 
 
 [Step 3: Download Codebase](#step-3) 
 
+[Step 4: Compile Codebase with Clang](#step-4) 
 
 #### Step 1
 First install docker to proceed [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/).
@@ -61,10 +62,10 @@ docker run -it -v ~/Desktop:/Desktop <IMAGE ID> bash
  ``` 
  <img width="700" alt="screen shot 2017-04-11 at 10 19 33 pm" src="https://cloud.githubusercontent.com/assets/18354718/24939748/0b130dea-1f05-11e7-832e-76d8accec323.png">
 
-#### Step 3
-Navigate into the top directory of mounted codebase and build with clang using scan-build
+#### Step 4
+Navigate into the top directory of mounted codebase and compile codebase with clang using [scan-build](https://clang-analyzer.llvm.org/scan-build.html)
 
-
+<img width="694" alt="screen shot 2017-04-11 at 10 36 53 pm" src="https://cloud.githubusercontent.com/assets/18354718/24940271/bddb05fc-1f07-11e7-81da-46b6797b8b4a.png">
 
 
 [Top](#table-of-contents)

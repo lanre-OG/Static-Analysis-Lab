@@ -1,3 +1,9 @@
+
+__Static Analysis__: Static code analysis is based on the analysis of the source code (or the bytecode in more advanced analyzers), which allows the identification of specific code patterns prone to security vulnerabilities
+
+
+
+
 ### Table of Contents    
 [Step 1: Install Docker](#step-1) 
 

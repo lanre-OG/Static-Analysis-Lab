@@ -1,8 +1,7 @@
 
-### Docker Install Instructions
+### Step 1
+First things first, Install docker to proceed [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/)
 
-#### Install docker to proceed
-[https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/)
 
 ```bash
 # clone repo into the install directory

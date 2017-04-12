@@ -1,3 +1,6 @@
+### Table of Contents    
+[Step 1: Install Docker](#step-1) 
+
 
 ### Step 1
 First things first, Install docker to proceed [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/)

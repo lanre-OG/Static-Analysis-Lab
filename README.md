@@ -9,7 +9,7 @@ __Static Analysis__: Static code analysis is based on the analysis of the source
 
 __Clang Analyzer__: [Clang](https://clang-analyzer.llvm.org/) is an open-source compiler for the C family of programming language, it is built on the LLVM optimizer and code generator, thus, allowing it to provide high-quality optimization and code generation support for many targets. Clang performs semantic analysis, type checking and builds Abstract Syntax Trees(AST) for all valid input.
 
-### Table of Contents    
+### Table of Content    
 [Step 1: Install Docker](#step-1) 
 
 [Step 2: Build clang Docker Image](#step-2) 

@@ -60,5 +60,5 @@ For this lab we will be using [NIST SAMATE Juliet Test Suite](https://samate.nis
 ```bash
 docker run -it -v <codebase directory on host>:<directory in docker image> <IMAGE ID> bash
 docker run -it -v ~/Desktop:/Desktop <IMAGE ID> bash
-
  ``` 
+ <img width="700" alt="screen shot 2017-04-11 at 10 19 33 pm" src="https://cloud.githubusercontent.com/assets/18354718/24939748/0b130dea-1f05-11e7-832e-76d8accec323.png">

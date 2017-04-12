@@ -20,14 +20,16 @@ First install docker to proceed [https://docs.docker.com/engine/installation/](h
 [Top](#table-of-contents)
 
 ### Step 2
-Follow the below steps to install Clang docker Image from Dockerfile.
+Follow the steps below to install Clang docker Image from Dockerfile.
+
 ```bash
-# clone repo into the install directory
-git clone https://github.com/lanreogunmola/I-Study.git .
- 
- 
-# build image from docker file 
+# Create directory for project
   mkdir docker-clang
   cd docker-clang
-  
-docker build -f /path/to/a/Dockerfile .
+
+# Clone git repository or copy Dockerfile from repository
+  git clone https://github.com/lanreogunmola/I-Study.git .
+ 
+# build Clang image from docker file 
+  docker build -f /path/to/a/Dockerfile .
+  e.g docker build -f /docker-clang/Dockerfile .

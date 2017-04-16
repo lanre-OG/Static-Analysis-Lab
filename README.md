@@ -63,7 +63,7 @@ Follow the steps below to build Clang docker Image from Dockerfile.
 #### Step 3
 Download codebase of choice (C or C++). 
 
-For this lab we will be using [NIST SAMATE Juliet Test Suite](https://samate.nist.gov/SRD/view.php?tsID=86) and [Epic modbus](https://github.com/epics-modules/modbus) Programmable Logic Controller and its [dependencies](http://cars.uchicago.edu/software/epics/modbus.html)
+For this lab we will be using [NIST SAMATE Juliet Test Suite](https://samate.nist.gov/SRD/view.php?tsID=101) and [Epic modbus](https://github.com/epics-modules/modbus) Programmable Logic Controller and its [dependencies](http://cars.uchicago.edu/software/epics/modbus.html)
 
 ##### Mount codebase from location on host machine into docker container
 ```bash
@@ -74,7 +74,9 @@ docker run -it -v ~/Desktop:/Desktop <IMAGE ID> bash
 
 #### Step 4
 Navigate into the top directory of mounted codebase and compile codebase with clang using [scan-build](https://clang-analyzer.llvm.org/scan-build.html)
-
+```bash
+scan-build 
+```
 <img width="694" alt="screen shot 2017-04-11 at 10 36 53 pm" src="https://cloud.githubusercontent.com/assets/18354718/24940271/bddb05fc-1f07-11e7-81da-46b6797b8b4a.png">
 
 

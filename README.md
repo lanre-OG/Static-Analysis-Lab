@@ -1,10 +1,12 @@
 
-__Static Analysis__: Static code analysis (also referred to as whitebox testing) is based on the analysis of the source code (or the bytecode in more advanced analyzers), which allows the identification of specific code patterns prone to security vulnerabilities.
+__Static Analysis__: Static code analysis (also referred to as whitebox testing) is based on the analysis of the source code (or the bytecode in more advanced analyzers) without actually running the program.They enable the identification of specific code patterns prone to security vulnerabilities.Static code analysis tools are looking for a specific set of patterns or rules in the software code, very similar to the way antivirus programs search for viruses.
 
-Static code analysis tools and techniques may produce false positives, since they are often based on methods using approximations. A number of tools and methods have sacrificed precision for performance and accept overapproximation
+Static code analysis tools and techniques may produce false positives, since they are often based on methods using approximations. A number of tools and methods have sacrificed precision for performance and even accept some form of overapproximation. 
+
+Some of the more advanced tools make it possible to add new rules to a set of predefined ones. We must also be aware that a tool will never find any error if this behavior has not been specified with rules or patterns
 
 #### Static Analysis Techniques
-* __Data Flow Analysis__: Data flow analysis is about analyzing where data come from, where data go to, and how data are manipulated. Typical examples of data flow analysis methods are reaching definitions, live variables and available expressions
+* __Data Flow Analysis__: Data flow analysis is about analyzing where data comes from, where data goes to, and how the data will be manipulated. Typical examples of data flow analysis methods includes: reaching definitions, live variables and available expressions
 * __Control Flow Graph(CFG)__:
 * __Taint Analysis__:
 * __Lexical Analysis__:

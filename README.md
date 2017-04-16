@@ -1,13 +1,17 @@
 
-__Static Analysis__: Static code analysis is based on the analysis of the source code (or the bytecode in more advanced analyzers), which allows the identification of specific code patterns prone to security vulnerabilities
+__Static Analysis__: Static code analysis (also referred to as whitebox testing) is based on the analysis of the source code (or the bytecode in more advanced analyzers), which allows the identification of specific code patterns prone to security vulnerabilities.
+
+Static code analysis tools and techniques may produce false positives, since they are often based on methods using approximations. A number of tools and methods have sacrificed precision for performance and accept overapproximation
 
 #### Static Analysis Techniques
-* __Data Flow Analysis__:
+* __Data Flow Analysis__: Data flow analysis is about analyzing where data come from, where data go to, and how data are manipulated. Typical examples of data flow analysis methods are reaching definitions, live variables and available expressions
 * __Control Flow Graph(CFG)__:
 * __Taint Analysis__:
 * __Lexical Analysis__:
 
 __Clang Analyzer__: [Clang](https://clang-analyzer.llvm.org/) is an open-source compiler for the C family of programming language, it is built on the LLVM optimizer and code generator, thus, allowing it to provide high-quality optimization and code generation support for many targets. Clang performs semantic analysis, type checking and builds Abstract Syntax Trees(AST) for all valid input.
+
+  AST analysis often adopts a pattern-matching approach where rules for AST patterns are defined and the analysis is accomplished by traversing the AST and checking the visited structures against defined rules.
 
 ### Table of Content    
 [Step 1: Install Docker](#step-1) 

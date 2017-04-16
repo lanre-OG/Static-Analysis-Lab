@@ -8,12 +8,16 @@ Some of the more advanced tools make it possible to add new rules to a set of pr
 #### Static Analysis Techniques
 * __Data Flow Analysis__: Data flow analysis is about analyzing where data comes from, where data goes to, and how the data will be manipulated. Typical examples of data flow analysis methods includes: reaching definitions, live variables and available expressions
 * __Control Flow Graph(CFG)__:
-* __Taint Analysis__:
-* __Lexical Analysis__:
+* __Taint Analysis__: Taint Analysis attempts to identify variables that have been 'tainted' with user controllable input and traces them to possible vulnerable functions also known as a 'sink'. If the tainted variable gets passed to a sink without first being sanitized it is flagged as a vulnerability.
+* __Lexical Analysis__: Lexical Analysis converts source code syntax into ‘tokens’ of information in an attempt to abstract the source code and make it easier to manipulate.
 
 __Clang Analyzer__: [Clang](https://clang-analyzer.llvm.org/) is an open-source compiler for the C family of programming language, it is built on the LLVM optimizer and code generator, thus, allowing it to provide high-quality optimization and code generation support for many targets. Clang performs semantic analysis, type checking and builds Abstract Syntax Trees(AST) for all valid input.
 
   AST analysis often adopts a pattern-matching approach where rules for AST patterns are defined and the analysis is accomplished by traversing the AST and checking the visited structures against defined rules.
+
+#### Learning Objectives
+* Students will be able to configure and execute software analysis tools 
+* Students will be able to analyze software analysis tool reports and understand impact to security objectives
 
 ### Table of Content    
 [Step 1: Install Docker](#step-1) 

@@ -65,8 +65,13 @@ Download codebase of choice (C or C++).
 
 For this lab we will be using [NIST SAMATE Juliet Test Suite](https://samate.nist.gov/SRD/view.php?tsID=101) and [Epic modbus](https://github.com/epics-modules/modbus) Programmable Logic Controller and its [dependencies](http://cars.uchicago.edu/software/epics/modbus.html)
 
-##### Mount codebase from location on host machine into docker container
+##### Mount or copy codebase from location on host machine into the docker container
 ```bash
+#docker copy
+docker cp <directory on host> image name or container ID: <path on image>
+docker cp ~/desktop/codebase faac57a823a8:/usr/bin 
+
+#docker mount volume
 docker run -it -v <codebase directory on host>:<directory in docker image> <IMAGE ID> bash
 docker run -it -v ~/Desktop:/Desktop <IMAGE ID> bash
  ``` 

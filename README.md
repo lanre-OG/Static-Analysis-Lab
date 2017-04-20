@@ -13,7 +13,10 @@ Some of the more advanced tools make it possible to add new rules to a set of pr
 
 __Clang Analyzer__: [Clang](https://clang-analyzer.llvm.org/) is an open-source compiler for the C family of programming language, it is built on the LLVM optimizer and code generator, thus, allowing it to provide high-quality optimization and code generation support for many targets. Clang performs semantic analysis, type checking and builds Abstract Syntax Trees(AST) for all valid input.
 
+Not only does the Clang Static Analyzer use the same parser and grammar as the clang compiler, but it uses the resulting Abstract Syntax Tree (AST) to do the analysis. It is also both configurable and extendable; it allows both checkers to be enabled/disabled as well as added.
+
   AST analysis often adopts a pattern-matching approach where rules for AST patterns are defined and the analysis is accomplished by traversing the AST and checking the visited structures against defined rules.
+
 
 #### Learning Objectives
 * Students will be able to configure and execute software analysis tools 

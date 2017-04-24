@@ -31,6 +31,8 @@ Not only does the Clang Static Analyzer use the same parser and grammar as the c
 
 [Step 4: Compile Codebase with Clang](#step-4) 
 
+[Step 4: Map report warning to CWE's](#step-5) 
+
 #### Step 1
 First install docker to proceed [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/).
 
@@ -108,4 +110,6 @@ Bug report summary
 
 Detailed report view
 
+#### Step 5
 
+The Common Weakness and Enumeration [(CWE)](http://cwe.mitre.org/) database helps to provide a unified, measurable set of software weaknesses that enables and enhances more effective discussion, description, selection, and use of software security tools and services

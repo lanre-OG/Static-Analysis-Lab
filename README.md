@@ -122,3 +122,9 @@ The ability to systematically map warning from various tool outputs to CWE datab
  * Map to a weakness only
  * Do Not Map to Views or Categories
  * Map to the lowest abstraction level possible
+ 
+ #### Suggested CWE Mapping Approach
+ 
+ Over the course of this independent study, we came up with an approach that aids the systematic mapping of tools output to CWE's in a repeatable and computable way. The blow five step approach is being proposed.
+ 
+ 

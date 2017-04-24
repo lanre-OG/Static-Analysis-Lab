@@ -117,3 +117,8 @@ The ability to systematically map warning from various tool outputs to CWE datab
  * A common language for describing software security weaknesses in architecture, design, or code
  * A standard measuring stick for software security tools targeting these weaknesses.
  * Provide a common baseline standard for weakness identification, mitigation, and prevention efforts
+
+#### CWE Mapping Guidelines
+ * Map to a weakness only
+ * Do Not Map to Views or Categories
+ * Map to the lowest abstraction level possible

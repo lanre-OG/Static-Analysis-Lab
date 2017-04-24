@@ -87,5 +87,7 @@ scan-build
 ```
 <img width="694" alt="screen shot 2017-04-11 at 10 36 53 pm" src="https://cloud.githubusercontent.com/assets/18354718/24940271/bddb05fc-1f07-11e7-81da-46b6797b8b4a.png">
 
+If a bug is found, clang generates a report with details about the warning. This can be reviewed by running "scan-view" on the report directorty
 
-[Top](#table-of-contents)
+<img width="637" alt="screen shot 2017-04-24 at 9 54 36 am" src="https://cloud.githubusercontent.com/assets/18354718/25343371/7644acbc-28d4-11e7-9637-9d07b54944b0.png">
+

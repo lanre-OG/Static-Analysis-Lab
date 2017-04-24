@@ -112,4 +112,8 @@ Detailed report view
 
 #### Step 5
 
-The Common Weakness and Enumeration [(CWE)](http://cwe.mitre.org/) database helps to provide a unified, measurable set of software weaknesses that enables and enhances more effective discussion, description, selection, and use of software security tools and services
+The Common Weakness and Enumeration [(CWE)](http://cwe.mitre.org/) database helps to provide a unified, measurable set of software weaknesses that enables and enhances more effective discussion, description, selection, and use of software security tools and services.
+The ability to systematically map warning from various tool outputs to CWE database will enhance the reporting of weaknesses as it will serve as:
+ * A common language for describing software security weaknesses in architecture, design, or code
+ * A standard measuring stick for software security tools targeting these weaknesses.
+ * Provide a common baseline standard for weakness identification, mitigation, and prevention efforts

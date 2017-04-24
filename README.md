@@ -102,6 +102,6 @@ This can be reviewed by running ```scan-view``` on the report directory
 <img width="904" alt="screen shot 2017-04-24 at 10 07 21 am" src="https://cloud.githubusercontent.com/assets/18354718/25344193/ff342528-28d6-11e7-9211-813860379074.png">
 
 
-
+<img width="1013" alt="screen shot 2017-04-24 at 10 07 27 am" src="https://cloud.githubusercontent.com/assets/18354718/25344544/055cb158-28d8-11e7-800b-0c658d4df7aa.png">
 
 

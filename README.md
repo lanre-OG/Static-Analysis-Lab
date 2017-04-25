@@ -83,33 +83,33 @@ docker cp ~/desktop/codebase faac57a823a8:/usr/bin
 docker run -it -v <codebase directory on host>:<directory in docker image> <IMAGE ID> bash
 docker run -it -v ~/Desktop:/Desktop <IMAGE ID> bash
  ``` 
- <img width="700" alt="screen shot 2017-04-11 at 10 19 33 pm" src="https://cloud.githubusercontent.com/assets/18354718/24939748/0b130dea-1f05-11e7-832e-76d8accec323.png">
+ <img width="600" alt="screen shot 2017-04-11 at 10 19 33 pm" src="https://cloud.githubusercontent.com/assets/18354718/24939748/0b130dea-1f05-11e7-832e-76d8accec323.png">
 
 #### Step 4
 Navigate into the top directory of mounted codebase and compile codebase with clang using [scan-build](https://clang-analyzer.llvm.org/scan-build.html)
 ```bash
 scan-build 
 ```
-<img width="694" alt="screen shot 2017-04-11 at 10 36 53 pm" src="https://cloud.githubusercontent.com/assets/18354718/24940271/bddb05fc-1f07-11e7-81da-46b6797b8b4a.png">
+<img width="600" alt="screen shot 2017-04-11 at 10 36 53 pm" src="https://cloud.githubusercontent.com/assets/18354718/24940271/bddb05fc-1f07-11e7-81da-46b6797b8b4a.png">
 
 If a bug is found, clang generates a bug summary report and further details about the bug can be reviewed by clicking on view report. 
 
 This can be reviewed by running ```scan-view``` on the report directory
 
-<img width="637" alt="screen shot 2017-04-24 at 9 54 36 am" src="https://cloud.githubusercontent.com/assets/18354718/25343371/7644acbc-28d4-11e7-9637-9d07b54944b0.png">
+<img width="600" alt="screen shot 2017-04-24 at 9 54 36 am" src="https://cloud.githubusercontent.com/assets/18354718/25343371/7644acbc-28d4-11e7-9637-9d07b54944b0.png">
 
 
 
-<img width="714" alt="screen shot 2017-04-24 at 10 10 39 am" src="https://cloud.githubusercontent.com/assets/18354718/25344444/c3fdf744-28d7-11e7-8c6c-0f493ed7909f.png">
+<img width="600" alt="screen shot 2017-04-24 at 10 10 39 am" src="https://cloud.githubusercontent.com/assets/18354718/25344444/c3fdf744-28d7-11e7-8c6c-0f493ed7909f.png">
 
 View bug report generated
 
 
-<img width="904" alt="screen shot 2017-04-24 at 10 07 21 am" src="https://cloud.githubusercontent.com/assets/18354718/25344193/ff342528-28d6-11e7-9211-813860379074.png">
+<img width="600" alt="screen shot 2017-04-24 at 10 07 21 am" src="https://cloud.githubusercontent.com/assets/18354718/25344193/ff342528-28d6-11e7-9211-813860379074.png">
 
 Bug report summary
 
-<img width="1013" alt="screen shot 2017-04-24 at 10 07 27 am" src="https://cloud.githubusercontent.com/assets/18354718/25344544/055cb158-28d8-11e7-800b-0c658d4df7aa.png">
+<img width="600" alt="screen shot 2017-04-24 at 10 07 27 am" src="https://cloud.githubusercontent.com/assets/18354718/25344544/055cb158-28d8-11e7-800b-0c658d4df7aa.png">
 
 Detailed report view
 
@@ -125,6 +125,18 @@ The ability to systematically map warning from various tool outputs to CWE datab
  * Map to a weakness only
  * Do Not Map to Views or Categories
  * Map to the lowest abstraction level possible
+ 
+The first thing will be to have a clear description of the warning or weakness from tool output. From the example above the warning is "dereference null pointer ".
+
+Carryout a [Full text search](https://cwe.mitre.org/find/index.html)
+
+<img width="600" alt="screen shot 2017-04-24 at 8 02 09 pm" src="https://cloud.githubusercontent.com/assets/18354718/25364602/2a2b20cc-2929-11e7-8c2a-ae47b57145c1.png">
+ 
+ 
+ 
+ 
+ 
+ 
  
  #### CWE Mapping Approach
  

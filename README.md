@@ -31,7 +31,7 @@ Not only does the Clang Static Analyzer use the same parser and grammar as the c
 
 [Step 4: Compile Codebase with Clang](#step-4) 
 
-[Step 4: Map report warning to CWE's](#step-5) 
+[Step 5: Map report warning to CWE's](#step-5) 
 
 #### Step 1
 First install docker to proceed [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/).

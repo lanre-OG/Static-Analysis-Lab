@@ -92,7 +92,7 @@ scan-build
 ```
 <img width="600" alt="screen shot 2017-04-11 at 10 36 53 pm" src="https://cloud.githubusercontent.com/assets/18354718/24940271/bddb05fc-1f07-11e7-81da-46b6797b8b4a.png">
 
-If a bug is found, clang generates a bug summary report and further details about the bug can be reviewed by clicking on view report. 
+If a bug is found, clang generates a bug summary report and further details about the bug can be reviewed by clicking on view report tab. 
 
 This can be reviewed by running ```scan-view``` on the report directory
 

@@ -123,8 +123,14 @@ The ability to systematically map warning from various tool outputs to CWE datab
  * Do Not Map to Views or Categories
  * Map to the lowest abstraction level possible
  
- #### Suggested CWE Mapping Approach
+ #### CWE Mapping Approach
  
- Over the course of this independent study, we came up with an approach that aids the systematic mapping of tools output to CWE's in a repeatable and computable way. The blow five step approach is being proposed.
+ The aim of this approach, is to come up steps that aids the systematic mapping of tools output to CWE's in a repeatable and computable way. The below five step approach is being proposed.
+
+* Generate a statement for the checker or weakness description (if none exists)
+* Break the statement into components (each component should be unambiguous, identifiable and accessible)
+* Generate a diagrammatic representation of the checker statement using the components above as guidance
+* Carry out an abstraction, addition or deletion operation on the statement at any of the components stages (E.g addition operation on    SC1 process stage) and identify CWE/Checker descriptions that maps to the derived statement
+* Validate above step:  generate a graphical representation of the CWE generated at each abstracted stage and compute the graph edit distance
  
  

@@ -133,6 +133,7 @@ Carryout a [Full text search](https://cwe.mitre.org/find/index.html)
 <img width="600" alt="screen shot 2017-04-24 at 8 02 09 pm" src="https://cloud.githubusercontent.com/assets/18354718/25364602/2a2b20cc-2929-11e7-8c2a-ae47b57145c1.png">
  
  
+Select the results of the full text search, confirm if it's base or variant and if it matches the lowest abstraction level by checking mapping friendly option
  
  
  

@@ -1,3 +1,6 @@
+#### Learning Objectives
+* Students will be able to configure and execute software analysis tools 
+* Students will be able to analyze software analysis tool reports and understand impact to security objectives
 
 __Static Analysis__: Static code analysis (also referred to as whitebox testing) is based on the analysis of the source code (or the bytecode in more advanced analyzers) without actually running the program. They enable the identification of specific code patterns prone to security vulnerabilities. Static code analysis tools are looking for a specific set of patterns or rules in the software code, very similar to the way antivirus programs search for viruses.
 
@@ -25,9 +28,6 @@ Not only does the Clang Static Analyzer use the same parser and grammar as the c
 * Collects the constraints on symbolic values along each path
 * Uses constraints to determine feasibility of paths
 
-#### Learning Objectives
-* Students will be able to configure and execute software analysis tools 
-* Students will be able to analyze software analysis tool reports and understand impact to security objectives
 
 ### Table of Content    
 [Step 1: Install Docker](#step-1) 

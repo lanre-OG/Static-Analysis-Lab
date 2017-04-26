@@ -17,6 +17,13 @@ Not only does the Clang Static Analyzer use the same parser and grammar as the c
 
   AST analysis often adopts a pattern-matching approach where rules for AST patterns are defined and the analysis is accomplished by traversing the AST and checking the visited structures against defined rules.
 
+#### Symbolic Execution 
+* Performs a path-senstive walk of Clang's CFG
+* Similar to program execution but
+  * explores every possible path through the program
+  * Uses symbolic values
+* Collects the constraints on symbolic values along each path
+* Uses constraints to determine feasibility of paths
 
 #### Learning Objectives
 * Students will be able to configure and execute software analysis tools 

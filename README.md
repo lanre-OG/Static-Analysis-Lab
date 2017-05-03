@@ -189,11 +189,12 @@ __2__. Break the statement into components. The components are described below
 __3__. Generate a diagrammatic representation of the weakness or checker statement using the components as guidance. We will use a flowchart to represent the above statement.
 
  <img width="400" alt="screen shot 2017-05-03 at 1 57 58 pm" src="https://cloud.githubusercontent.com/assets/18354718/25676725/be8e073a-3008-11e7-98b7-4de1c3ceb584.png">
+ 
+__4__. Carry out an abstraction, addition or deletion operation on the statement at any of the components stages (E.g addition operation on SC1 process stage) and identify CWE/Checker descriptions that maps to the derived statement. 
 
+Checker/CWE that map to abstracted/added or deleted statement at the lowest stage is presumed to be the best fit
 
-
-
-This step includes optional operations that helps to derive more detailed or abstracted description for the weakness or checker to aid easy mapping. The operations are described below.
+The operations are described below.
 
 __Abstraction__: High level extraction or broader definition/property of a subject.For example an abstraction of the above checker description will be:
 

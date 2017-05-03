@@ -145,6 +145,8 @@ Select the results of the full text search, confirm if it's base or variant and 
 Important things to consider when finding the best match for a tool output will be the description summary, extended description, technical impact and example code used to further explain the weaknesses.
  
 <img width="600" alt="screen shot 2017-04-25 at 10 44 38 pm" src="https://cloud.githubusercontent.com/assets/18354718/25417328/ee5574ea-2a08-11e7-912d-3ae9a330e08f.png">
+
+In this repository is a mapping of clang static analyzer security checkers to CWE ID's [Clang-CWE Mapping](https://github.com/lanreogunmola/Static-Analysis-Lab/blob/master/Clang-checker-CWE-mapping.xlsx) and also a directory containing clang checker with modifications made to the warning descriptions to report CWE ID's. This will among other benefits, provides a unified warning reporting.  
  
  
  

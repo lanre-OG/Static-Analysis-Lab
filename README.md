@@ -171,11 +171,15 @@ This step includes optional operations that helps to derive more detailed or abs
 
 __Abstraction__: High level extraction or broader definition/property of a subject.For example an abstraction of the above checker description will be:
 
-                 ABS-SC1: Loop condition without defined counter
+                ABS-SC1: Loop condition without defined counter
 
-__Addition__: Elaborating description, expanding functionality and properties to enable mapping.
+__Addition__: Elaborating description, expanding functionality and properties to enable mapping.An addition operation on the checker description will be:
 
-__Deletion__: Removing functionalities, keywords and layers of details to enable mapping and referencing.
+                ADD-SC1: Unchecked tainted value used as loop counter
+
+__Deletion__: Removing functionalities, keywords and layers of details to enable mapping and referencing.A deletion operation will be:
+
+                DEL-SC1: In-accurate conversion of floating point variable
 
 
 

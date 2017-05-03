@@ -40,6 +40,8 @@ Not only does the Clang Static Analyzer use the same parser and grammar as the c
 
 [Step 5: Map report warning to CWE's](#step-5) 
 
+[Step 6: Map report warning to CWE's](#step-6) 
+
 #### Step 1
 First install docker to proceed [https://docs.docker.com/engine/installation/](https://docs.docker.com/engine/installation/).
 
@@ -146,11 +148,9 @@ Important things to consider when finding the best match for a tool output will 
  
 <img width="600" alt="screen shot 2017-04-25 at 10 44 38 pm" src="https://cloud.githubusercontent.com/assets/18354718/25417328/ee5574ea-2a08-11e7-912d-3ae9a330e08f.png">
 
-In this repository is a mapping of clang static analyzer security checkers to CWE ID's [Clang-CWE Mapping](https://github.com/lanreogunmola/Static-Analysis-Lab/blob/master/Clang-checker-CWE-mapping.xlsx) and also a directory containing clang checker with modifications made to the warning descriptions to report CWE ID's. This will among other benefits, provides a unified warning reporting.  
+
  
- 
- 
- #### CWE Mapping Approach
+ #### Another CWE Mapping Approach
  
  The aim of this approach, is to come up steps that aids the systematic mapping of tools output to CWE's in a repeatable and computable way. The below five step approach is being proposed.
 
@@ -159,8 +159,27 @@ In this repository is a mapping of clang static analyzer security checkers to CW
 * Generate a diagrammatic representation of the checker statement using the components above as guidance
 * Carry out an abstraction, addition or deletion operation on the statement at any of the components stages (E.g addition operation on    SC1 process stage) and identify CWE/Checker descriptions that maps to the derived statement
 * Validate above step:  generate a graphical representation of the CWE generated at each abstracted stage and compute the graph edit distance
- 
- 
+
+We will provide a work through using the steps itemized above on one of the checkers built into clang for easy comprehension.
+
+1.The first step is to generate a statement for the checker or weakness description. For this example we will use the description from clang checker: 
+     
+               SC: Floating point variable used as loop counter
+        
+
+This step includes optional operations that helps to derive more detailed or abstracted description for the weakness or checker to aid easy mapping. The operations are described below.
+
+__Abstraction__: High level extraction or broader definition/property of a subject.For example an abstraction of the above checker description will be:
+
+                 ABS-SC1: Loop condition without defined counter
+
+__Addition__: Elaborating description, expanding functionality and properties to enable mapping.
+
+__Deletion__: Removing functionalities, keywords and layers of details to enable mapping and referencing.
+
+
+
+In this repository is a mapping of clang static analyzer's security checkers to CWE ID's [Clang-CWE Mapping](https://github.com/lanreogunmola/Static-Analysis-Lab/blob/master/Clang-checker-CWE-mapping.xlsx) and also a directory containing clang checkers with modifications to the warning descriptions to report closely related CWE ID's. This will among other benefits, provides a unified and easy to comprehend tool output.  
 
 ## License    
 Copyright (C) 2017

@@ -162,10 +162,23 @@ Important things to consider when finding the best match for a tool output will 
 
 We will provide a work through using the steps itemized above on one of the checkers built into clang for easy comprehension.
 
-1. The first step is to generate a statement for the checker or weakness description. For this example we will use the description from clang checker: 
+1. The first step is to generate a statement for the checker or weakness description. This can be extracted from the weakness to be mapped or from the tool checker.For this example we will use the description from clang checker: 
      
                SC: Floating point variable used as loop counter
         
+
+2. Break the statement into components. The components are described below
+
+* Subject: Noun or an entity(required) for example software or product
+
+* Activity: Operation performed by the subject (required)
+
++ Property: Critical attribute of the process (required) 
+
+- Action/Qualifier: Action to be carried out on the property (required) 
+
+
+
 
 This step includes optional operations that helps to derive more detailed or abstracted description for the weakness or checker to aid easy mapping. The operations are described below.
 

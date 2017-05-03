@@ -186,7 +186,9 @@ __2__. Break the statement into components. The components are described below
 
            Action: loop counter
            
-__3__. Generate a diagrammatic representation of the weakness or checker statement using the components as guidance. We will use a flowchart to represent the above statement
+__3__. Generate a diagrammatic representation of the weakness or checker statement using the components as guidance. We will use a flowchart to represent the above statement.
+
+ <img width="400" alt="screen shot 2017-05-03 at 1 57 58 pm" src="https://cloud.githubusercontent.com/assets/18354718/25676725/be8e073a-3008-11e7-98b7-4de1c3ceb584.png">
 
 
 

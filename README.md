@@ -208,6 +208,8 @@ __Deletion__: Removing functionalities, keywords and layers of details to enable
 
                 DEL-SC1: In-accurate conversion of floating point variable
 
+__5__. Validate above step: Generate a graphical representation of the CWE generated at each abstracted stage and compute the graph edit distance(GED). The CWE ID with the shortest GED is considered the best fit for the checker description.
+
 
 
 In this repository is a mapping of clang static analyzer's security checkers to CWE ID's [Clang-CWE Mapping](https://github.com/lanreogunmola/Static-Analysis-Lab/blob/master/Clang-checker-CWE-mapping.xlsx) and also a directory containing clang checkers with modifications to the warning descriptions to report closely related CWE ID's. This will among other benefits, provides a unified and easy to comprehend tool output.  

@@ -162,7 +162,7 @@ Important things to consider when finding the best match for a tool output will 
 
 We will provide a work through using the steps itemized above on one of the checkers built into clang for easy comprehension.
 
-1.The first step is to generate a statement for the checker or weakness description. For this example we will use the description from clang checker: 
+1. The first step is to generate a statement for the checker or weakness description. For this example we will use the description from clang checker: 
      
                SC: Floating point variable used as loop counter
         

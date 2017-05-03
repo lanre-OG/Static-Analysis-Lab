@@ -170,12 +170,20 @@ We will provide a work through using the steps itemized above on one of the chec
 2. Break the statement into components. The components are described below
 
 * Subject: Noun or an entity(required) for example software or product
+     
+           Subject: Software
 
 * Activity: Operation performed by the subject (required)
+  
+           Activity: Looping
 
 + Property: Critical attribute of the process (required) 
 
+           Property: floating type variable
+
 - Action/Qualifier: Action to be carried out on the property (required) 
+
+           Action: loop counter
 
 
 

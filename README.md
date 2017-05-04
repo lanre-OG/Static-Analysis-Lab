@@ -211,8 +211,21 @@ __Deletion__: Removing functionalities, keywords and layers of details to enable
 __5__. Validate above step: Generate a graphical representation of the CWE generated at each abstracted stage and compute the graph edit distance(GED). The CWE ID with the shortest GED is considered the best fit for the checker description.
 
 
+### Building Clang from source and registering new or modified checkers
 
-In this repository is a mapping of clang static analyzer's security checkers to CWE ID's [Clang-CWE Mapping](https://github.com/lanreogunmola/Static-Analysis-Lab/blob/master/Clang-checker-CWE-mapping.xlsx) and also a directory containing clang checkers with modifications to the warning descriptions to report closely related CWE ID's. This will among other benefits, provides a unified and easy to comprehend tool output.  
+Follow the below the Clang Getting Started [link here](https://clang.llvm.org/get_started.html) for steps to build clang from source on a unix-like system.
+
+In this repository is a mapping of clang static analyzer's security checkers to CWE ID's [Clang-CWE Mapping](https://github.com/lanreogunmola/Static-Analysis-Lab/blob/master/Clang-checker-CWE-mapping.xlsx) and also a directory containing clang checkers with modifications to the warning descriptions to report closely related CWE ID's. 
+
+
+To add these checkers during the initial build process of clang from source, follow steps 1-4 of the Clang Getting Started [link here](https://clang.llvm.org/get_started.html). Then find the analyzer source code located under the Clang source tree: 
+
+`$ cd llvm/tools/clang`
+See: include/clang/StaticAnalyzer, lib/StaticAnalyzer, test/Analysis.
+
+Copy the checkers from this repository and overwrite the default checkers in 
+
+
 
 ## License    
 Copyright (C) 2017

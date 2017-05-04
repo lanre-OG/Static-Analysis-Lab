@@ -211,7 +211,7 @@ __Deletion__: Removing functionalities, keywords and layers of details to enable
 __5__. Validate above step: Generate a graphical representation of the CWE generated at each abstracted stage and compute the graph edit distance(GED). The CWE ID with the shortest GED is considered the best fit for the checker description.
 
 
-### Building Clang from source and registering new or modified checkers
+## Building Clang from source and registering new or modified checkers
 
 Follow the below the Clang Getting Started [link here](https://clang.llvm.org/get_started.html) for steps to build clang from source on a unix-like system.
 

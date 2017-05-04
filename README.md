@@ -223,7 +223,7 @@ To add these checkers during the initial build process of clang from source, fol
 `$ cd llvm/tools/clang`
 See: include/clang/StaticAnalyzer, lib/StaticAnalyzer, test/Analysis.
 
-Copy the checkers from this repository and overwrite the default checkers in 
+Copy the checkers from this repository and overwrite the default checkers in `lib/StaticAnalyzer` and conclude the remaining steps in Clang getting started guide.
 
 
 

@@ -64,8 +64,14 @@ Follow the steps below to build Clang docker Image from Dockerfile.
   
 
  ##### Identify image ID, name and container ID
+ 
+ Displays all images available
   ```bash
   docker images
+    ```
+ Displays all available container Id's.At this stage of the lab no container ID will be displayed.
+ 
+    ```bash
   docker ps -a
   ``` 
  ##### Run an interactive shell into the docker image built and confirm if Clang was successfully installed

@@ -169,7 +169,7 @@ Copy the checkers from this repository and overwrite the default checkers in `li
 
 * [Clang 24hours checkers](http://llvm.org/devmtg/2012-11/Zaks-Rose-Checker24Hours.pdf)
 * [Docker commands](https://docs.docker.com/engine/reference/commandline/docker/)
-* [Another CWE mapping approach](https://docs.google.com/presentation/d/1_2s_Q9JJbijzZQPw4yo3WDVniuwKuxLMnSsntmA4OkE/edit#slide=id.g1eef2210c7_0_0)
+* [Another CWE mapping approach](https://github.com/lanreogunmola/Static-Analysis-Lab/wiki/CWE-Mapping-approach)
 * [Finding bugs with Clang](http://web.cs.ucla.edu/~tianyi.zhang/tutorial.html)
 * [Lightweight formal models of software weaknesses](http://ieeexplore.ieee.org/document/6612277/)
 * [MODBUS Application Protocol Specification](http://www.modbus.org/docs/Modbus_Application_Protocol_V1_1b.pdf)

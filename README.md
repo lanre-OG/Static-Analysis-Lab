@@ -149,67 +149,6 @@ Important things to consider when finding the best match for a tool output will 
 <img width="600" alt="screen shot 2017-04-25 at 10 44 38 pm" src="https://cloud.githubusercontent.com/assets/18354718/25417328/ee5574ea-2a08-11e7-912d-3ae9a330e08f.png">
 
 
- 
- #### Another CWE Mapping Approach
- 
- The aim of this approach, is to come up steps that aids the systematic mapping of tools output to CWE's in a repeatable and computable way. The below five step approach is being proposed.
-
-1. Generate a statement for the checker or weakness description (if none exists)
-2. Break the statement into components (each component should be unambiguous, identifiable and accessible)
-3. Generate a diagrammatic representation of the checker statement using the components above as guidance
-4. Carry out an abstraction, addition or deletion operation on the statement at any of the components stages (E.g addition operation on    SC1 process stage) and identify CWE/Checker descriptions that maps to the derived statement
-5. Validate above step:  generate a graphical representation of the CWE generated at each abstracted stage and compute the graph edit distance
-
-We will provide a work through using the steps itemized above on one of the checkers built into clang for easy comprehension.
-
-
-__1__. The first step is to generate a statement for the checker or weakness description. This can be extracted from the weakness to be mapped or from the tool checker.For this example we will use the description from clang checker: 
-     
-               SC: Software uses a floating type variable as loop counter
-        
-
-__2__. Break the statement into components. The components are described below
-
-* Subject: Noun or an entity(required) for example software or product
-     
-           Subject: Software
-
-* Activity: Operation performed by the subject (required)
-  
-           Activity: Looping
-
-+ Property: Critical attribute of the process (required) 
-
-           Property: floating type variable
-
-- Action/Qualifier: Action to be carried out on the property (required) 
-
-           Action: loop counter
-           
-__3__. Generate a diagrammatic representation of the weakness or checker statement using the components as guidance. We will use a flowchart to represent the above statement.
-
- <img width="400" alt="screen shot 2017-05-03 at 1 57 58 pm" src="https://cloud.githubusercontent.com/assets/18354718/25676725/be8e073a-3008-11e7-98b7-4de1c3ceb584.png">
- 
-__4__. Carry out an abstraction, addition or deletion operation on the statement at any of the components stages (E.g addition operation on SC1 process stage) and identify CWE/Checker descriptions that maps to the derived statement. 
-
-Checker/CWE that map to abstracted/added or deleted statement at the lowest stage is presumed to be the best fit
-
-The operations are described below.
-
-__Abstraction__: High level extraction or broader definition/property of a subject.For example an abstraction of the above checker description will be:
-
-                ABS-SC1: Loop condition without defined counter
-
-__Addition__: Elaborating description, expanding functionality and properties to enable mapping.An addition operation on the checker description will be:
-
-                ADD-SC1: Unchecked tainted value used as loop counter
-
-__Deletion__: Removing functionalities, keywords and layers of details to enable mapping and referencing.A deletion operation will be:
-
-                DEL-SC1: In-accurate conversion of floating point variable
-
-__5__. Validate above step: Generate a graphical representation of the CWE generated at each abstracted stage and compute the graph edit distance(GED). The CWE ID with the shortest GED is considered the best fit for the checker description.
-
 
 ## Building Clang from source and registering new or modified checkers
 

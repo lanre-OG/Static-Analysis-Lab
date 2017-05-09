@@ -75,7 +75,7 @@ Follow the steps below to build Clang docker Image from Dockerfile.
   `docker ps -a`
 
   
- ##### Run an interactive shell into the docker image built and confirm if Clang was successfully installed
+ ##### Copy image ID displayed above,run an interactive shell into the docker image built and confirm if Clang was successfully installed
   ```bash
    docker run -it <IMAGE ID> bash
   ``` 
@@ -104,13 +104,20 @@ docker run -it -v ~/Desktop:/Desktop <IMAGE ID> bash
 #### Step 4
 Navigate into the top directory of mounted codebase and compile codebase with clang using [scan-build](https://clang-analyzer.llvm.org/scan-build.html)
 ```bash
-scan-build 
+scan-build-3.6 make
+```
+
+OR
+
+For a single c program file
+```bash
+scan-build-3.6 gcc -c <path to c program file>
 ```
 <img width="600" alt="screen shot 2017-04-11 at 10 36 53 pm" src="https://cloud.githubusercontent.com/assets/18354718/24940271/bddb05fc-1f07-11e7-81da-46b6797b8b4a.png">
 
 If a bug is found, clang generates a bug summary report and further details about the bug can be reviewed by clicking on view report tab. 
 
-This can be reviewed by running ```scan-view``` on the report directory
+This can be reviewed by running ```scan-view``` on the report directory with the container or copy the report into the host PC.
 
 <img width="600" alt="screen shot 2017-04-24 at 9 54 36 am" src="https://cloud.githubusercontent.com/assets/18354718/25343371/7644acbc-28d4-11e7-9637-9d07b54944b0.png">
 

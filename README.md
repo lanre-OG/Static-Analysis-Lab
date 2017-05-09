@@ -102,7 +102,7 @@ docker run -it -v ~/Desktop:/Desktop <IMAGE ID> bash
  <img width="600" alt="screen shot 2017-04-11 at 10 19 33 pm" src="https://cloud.githubusercontent.com/assets/18354718/24939748/0b130dea-1f05-11e7-832e-76d8accec323.png">
 
 #### Step 4
-Navigate into the top directory of mounted codebase and compile codebase with clang using [scan-build](https://clang-analyzer.llvm.org/scan-build.html)
+Navigate into the top directory of mounted codebase(where the makefile resides) and compile codebase with clang using [scan-build](https://clang-analyzer.llvm.org/scan-build.html)
 ```bash
 scan-build-3.6 make
 ```
@@ -177,6 +177,13 @@ To add these checkers during the initial build process of clang from source, fol
 See: include/clang/StaticAnalyzer, lib/StaticAnalyzer, test/Analysis.
 
 Copy the checkers from this repository and overwrite the default checkers in `lib/StaticAnalyzer` and conclude the remaining steps in Clang getting started guide.
+
+## Lab Exercise
+
+1. Download code base of your choice (preferably C or C++)
+2. Compile codebase using Clang as shown above
+3. Generate and review tool output/warning using scan view 
+4. Generate CWE ID's-tool output mapping (Identify the CWE ID with the lowest level of abstraction)
 
 
 ## Additional Resources

@@ -144,6 +144,24 @@ The ability to systematically map warning from various tool outputs to CWE datab
  * A standard measuring stick for software security tools targeting these weaknesses.
  * Provide a common baseline standard for weakness identification, mitigation, and prevention efforts
 
+### CWE Types
+
+* Weakness Class: e.g. CWE-20
+
+  Abstract, independent of any specific language or technology
+  
+* Weakness Base: e.g. CWE-79
+
+  Abstract, sufficient details to infer specific methods for detection and prevention
+  
+* Weakness Variant: e.g. CWE-85
+
+  Detailed, limited to a specific language or technology.
+  
+* Weakness Category: e.g. CWE-990
+
+  A set of other entries that share a common characteristic
+
 #### CWE Mapping Guidelines
  * Map to a weakness only
  * Do Not Map to Views or Categories
@@ -158,7 +176,7 @@ Carryout a [Full text search](https://cwe.mitre.org/find/index.html)
  
 Select the results of the full text search, confirm if it's base or variant and if it matches the lowest abstraction level by navigating through the presentation filters at the top right as shown below.
 
-Important things to consider when finding the best match for a tool output will be the description summary, extended description, technical impact and example code used to further explain the weaknesses.
+Important things to consider when finding the best match for a tool output are: description summary, extended description, technical impact, example code used to further explain the weaknesses and navigating parent, child, peer relationships.
  
 <img width="600" alt="screen shot 2017-04-25 at 10 44 38 pm" src="https://cloud.githubusercontent.com/assets/18354718/25417328/ee5574ea-2a08-11e7-912d-3ae9a330e08f.png">
 
@@ -183,7 +201,7 @@ Copy the checkers from this repository and overwrite the default checkers in `li
 1. Download code base of your choice (preferably C or C++)
 2. Compile codebase using Clang as shown above
 3. Generate and review tool output/warning using scan view 
-4. Generate CWE ID's-tool output mapping (Identify the CWE ID with the lowest level of abstraction)
+4. Map the clang tool output to CWE ID's,using the lowest level of abstraction.
 
 
 ## Additional Resources
